@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+$font-logo: 'ProximaNova';
+$font-h1: 'GothamRounded';
+$font-h3: 'ProximaNova Light';
+$font-btn: 'ProximaNova Semibold';
+
+.container {
+    width: 1228px;
+    margin: 0 auto;
+    position: relative;
+}
