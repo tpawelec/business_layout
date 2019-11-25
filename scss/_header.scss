@@ -4,8 +4,19 @@
     background-image: url('../assets/header.jpg');
     background-size: cover;
     color: #fff;
+    position: relative;
 }
 
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+
+}
 .header__logo {
     position: relative;
     top: 50px;
@@ -24,8 +35,8 @@
         font-family: $font-logo;
 
         p {
-            font-size: 13px;
-            line-height: 32px;
+            font-size: ptToPx(13px);
+            line-height: ptToPx(32px);
         }
     }
 }
@@ -49,8 +60,8 @@
                 color: #fff;
                 text-decoration: none;
                 font-family: $font-logo;
-                font-size: 16px;
-                line-height: 32px;
+                font-size: ptToPx(16px);
+                line-height: ptToPx(32px);
                 text-transform: uppercase;
                 position: relative;
 
@@ -72,18 +83,18 @@
     margin-top: 205px;
 
     .header__h1 {
-        font-family: $font-h1;
+        font-family: $font-gotham-normal;
         font-weight: 100;
-        font-size: 48px;
-        max-width: 505px;
+        font-size: ptToPx(48px);
+        max-width: 605px;
         margin-bottom: 45px;
     }
 
     .header__h3 {
-        font-family: $font-h3;
+        font-family: $font-proxima-light;
         font-weight: 100;
-        max-width: 600px;
-        font-size: 18px;
+        max-width: 700px;
+        font-size: ptToPx(18px);
         line-height: 1.5;
     }
 }
@@ -93,9 +104,9 @@
     text-decoration: none;
     display: inline-block;
     color: #fff;
-    font-family: $font-h1;
+    font-family: $font-gotham-normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: ptToPx(14px);
     width: 145px;
     height: 55px;
     border: 2px solid #fff;

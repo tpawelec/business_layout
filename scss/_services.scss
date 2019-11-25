@@ -1,0 +1,104 @@
+.services {
+
+    background-color: #f6f6f6;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+
+    .services__description {
+        padding-left: calc((100vw - 1228px) / 2);
+        color: #333;
+
+        .services__h1 {
+            text-transform: uppercase;
+            font-family: $font-open-sans;
+            font-size: ptToPx(42px);
+            margin-top: 180px;
+            margin-bottom: 70px;
+            position: relative;
+            color: #333;
+
+            &::after {
+                content: '';
+                height: 1px;
+                width: 20px;
+                background-color: #333;
+                position: absolute;
+                bottom: -20px;
+                left: 5px;
+            }
+        }
+
+        .services__content {
+            color: #888;
+            font-family: $font-logo;
+
+        }
+    }
+
+    .services__icons {
+        position: relative;
+
+        .icons__row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 162px;
+            transform-origin: top left;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            position: absolute;
+            top: 75%;
+            left: -5%;
+
+            &:nth-child(2) {
+                left: 20.5%;
+                top: 74.8%;
+            }
+            
+            &:nth-child(3) {
+                grid-template-columns: repeat(2, 1fr);
+                left: 58.5%;
+                top: 59.5%;
+            }
+
+            .icons__item {
+                width: 150px;
+                height: 150px;
+                background-color: #fff;
+                margin: 6.25px;
+                font-family: $font-btn;
+                color: #474747;
+
+                &:hover {
+                    background-color: #28282e;
+                    color: #fff;
+                }
+
+                .icons__content {
+                    width: calc(150px * 1.4);
+                    text-align: center;
+                    padding: 6.25px;
+                    position: relative;
+                    top: 25%;
+                    left: -20%;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+
+                    .icons__title {
+                        text-transform: uppercase;
+                        font-size: ptToPx(12px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+  

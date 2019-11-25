@@ -1,3 +1,9 @@
+@function ptToPx($pt) {
+    $result: $pt * 1.2;
+
+    @return $result;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +11,10 @@
 }
 
 $font-logo: 'ProximaNova';
-$font-h1: 'GothamRounded';
-$font-h3: 'ProximaNova Light';
+$font-gotham-normal : 'GothamRounded';
+$font-proxima-light: 'ProximaNova Light';
 $font-btn: 'ProximaNova Semibold';
+$font-open-sans: 'OpenSans';
 
 .container {
     width: 1228px;
